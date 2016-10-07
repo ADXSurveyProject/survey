@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="Survey">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <script src="assets/mobirise/js/canvasjs.min.js"></script>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/app/js/survey.js"></script>
+  <script src="assets/app/js/jsontohtml.js"></script>
+  <script src="assets/datatable/1.10.12/jquery.dataTables.js"></script>
+<script>
+window.onload=function() {
+	init();
+	doAction(doOnSurveyComplete);		
+};
+ </script>
+  
+</head>
+<body>
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="msg-box3-2" style="background-color: rgb(255, 255, 255);">
+    
+    
+
+    <div>
+        
+        <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 0px; padding-bottom: 0px;">
+            <div class="row">
+                <div class="col-sm-12">
+                     
+                    <ul class="mbr-reviews mbr-reviews--wysiwyg row">
+                        <li class="mbr-reviews__item col-sm-6 col-md-4">
+						    <div class="mbr-reviews__text"><strong><p id="KeyDecisionIssues" class="mbr-reviews__p" style="font-size:50px">4</p></strong>
+						    
+                            <p class="mbr-reviews__p"><strong>Key Decision Issues</strong></p></div>
+
+                        </li><li class="mbr-reviews__item col-sm-6 col-md-4">
+							<div class="mbr-reviews__text"><p id="SpecialDecisionFactors" class="mbr-reviews__p" style="font-size:50px">9</p>
+						
+							<p class="mbr-reviews__p"><strong>Specific Decision Factors</strong></p></div>
+
+                        </li><li class="mbr-reviews__item col-sm-6 col-md-4">
+                            <div class="mbr-reviews__text"><center><div id="chartContainer" style="height: 80px; width: 300px;"></div></center></div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      
+		<div class="mbr-section__container">
+            <div class="row">
+                <div class="col-sm-12">
+                     
+                    <ul class="mbr-reviews mbr-reviews--wysiwyg row" >
+                        <li class="mbr-reviews__item">
+						    <div class="mbr-reviews__text"><strong><p class="mbr-reviews__p" style="font-size:25px;text-align: left">Overview</p></strong>
+                            <p style="text-align: left" class="mbr-reviews__p">There are many issues that could possibly influence a decision about medical treatment. After considering all of these you have identified those issues, concerns and beliefs that are most important for you to assign when making a difficult choice about medical treatment. </p>
+							<p style="text-align: left"  class="mbr-reviews__p">In the Value Profile Summary you will see a coherent and clarified description of the decision factors youn have identified as most important to you. This document should provide you and your loved ones with clarity about your own decision making priorities.</p>
+							<p style="text-align: left" class="mbr-reviews__p">For the details regarding the input that has produced these final click on the blue footnote number and you will see the individual reponses that identified your decision factors.</p>
+							</div>                   
+							<div id="decisions"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div class="mbr-section__container">
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+    </div>
+	
+    
+    
+</section>
+</body>
+</html>
