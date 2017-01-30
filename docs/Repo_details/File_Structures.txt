@@ -1,0 +1,13 @@
+epository Name: survey
+
+Structure:
+
+code/WebContent/assets			All JS, CSS 
+code/WebContent/images 			Images 
+code/WebContent/			All JSP and HTMLS 
+
+code/src/com/survey/dao			Java file to connect to DB
+code/src/com/survey/service		Java file to AJAX calls
+code/src/com/survey/web			Java file - Controller 
+
+Screent shots
